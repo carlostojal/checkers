@@ -1,0 +1,7 @@
+[submodule "checkers-frontend"]
+	path = checkers-frontend
+	url = https://github.com/carlostojal/checkers-frontend
+
+[submodule "checkers-backend"]
+	path = checkers-backend
+	url = https://github.com/carlostojal/checkers-backend
