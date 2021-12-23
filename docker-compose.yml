@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  checkers-backend:
+  backend:
     image: checkersbackend:latest
     ports:
       - 3000:3000
@@ -9,10 +9,10 @@ services:
     volumes:
       - ./checkers-backend:/usr/src/checkers-backend
 
-  checkers-frontend:
+  frontend:
     image: checkersfrontend:latest
     ports:
       - 8080:80
-    working_dir: /usr/src/checkers-frontend
+    working_dir: /usr/share/nginx/html
     volumes:
-      - ./checkers-frontend:/usr/src/checkers-frontend
+      - ./checkers-frontend:/usr/share/nginx/html
